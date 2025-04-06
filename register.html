@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+        }
+        #rectangel{
+        
+           background-color: white;
+            height: 15cm;
+            width: 20cm;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            margin-top: 1cm;
+           border-radius: 1cm;
+           left: 8cm;
+          box-shadow: 10px 8px 10px grey;
+        }
+        #first{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(250, 180, 191);
+            padding: 0.3cm;
+            height: 3cm;
+            width: 5cm;
+            position: relative;
+            margin-right: 3cm;
+            border-radius: 1.2cm;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 5cm;
+            justify-content: center;
+            
+
+        }
+
+        #first:hover{
+            background-image: linear-gradient(red, yellow);
+            box-shadow: 10px 10px grey;
+        }
+
+
+        #second{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(41, 7, 124);
+            padding: 0.3cm;
+            height: 3cm;
+            width: 5cm;
+            position: relative;
+            margin-left: 2cm;
+            border-radius: 1.2cm;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 5cm;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            
+
+
+        }
+
+        #second:hover{
+            background-image: linear-gradient(red, yellow);
+            box-shadow: 10px 5px 1px grey;
+        }
+        
+    </style>
+    <div id="rectangel">
+        <button id="first">CUSTOMER</button>  <button id="second">HOSPITAL</button>
+    </div>
+    <script>
+        document.getElementById("first").addEventListener("click", function() {
+    window.location.href = "customer.html";
+
+
+});
+document.getElementById("second").addEventListener("click", function() {
+    window.location.href = "hospital.html";
+
+
+});
+
+
+    </script>
+</body>
+</html>

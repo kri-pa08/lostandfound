@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    
+    <style>
+
+        *{
+            padding: 0%;
+            margin: 0;
+        }
+
+    .nav{
+            background-color: rgb(2, 8, 78);
+            height: 2.6cm;
+            width: 100%;
+            text-align: end;
+
+        }
+
+         .nav h1{
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 0.5cm;
+            left: 1.1cm;
+            font-size: 3rem;
+            
+            
+        }
+         #navbar a{
+            color: white;
+            text-decoration: none;
+            position: relative;
+            margin-left: 2cm;
+           top: 1cm;
+  }
+
+     #sign{
+        margin-left: 2cm;
+        margin-right: 2cm;
+        position: relative;
+        top: 1cm;
+        height: 0.8cm;
+        width: 3cm;
+       background-color: yellow;
+       text-align: center;
+       font-size: large;
+       font-weight: 600;
+       border-radius: 2cm;
+     }
+
+
+     #sign:hover{
+        background-color: rgb(252, 252, 180);
+     }
+
+     #main{
+        text-align: center;
+        top: 4cm;
+        position: relative;
+        
+     }
+
+     #main h1{
+        font-size: 3.8rem;
+        left: 2cm;
+     }
+
+     p{
+        font-size: 1.5rem;
+        position: relative;
+        top: 1cm;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+     }
+
+     #report{
+        position: relative;
+        top: 1.5cm;
+        height: 2cm;
+        width: 5cm;
+        border-radius: 3cm;
+        background-color: rgb(149, 142, 249);
+        font-size: large;
+        font-weight: 700;
+     }
+
+     #discover{
+        position: relative;
+        top: 1.5cm;
+        left: 2cm;
+        height: 2cm;
+        width: 5cm;
+        border-radius: 3cm;
+        background-color: rgb(250, 48, 183);
+        font-size: large;
+        font-weight: 700;
+     }
+
+     #discover:hover{
+        background-color: pink;
+     }
+
+     #report:hover{
+        background-color: aqua;
+     }
+
+
+     #section{
+        position: relative;
+        top: 9cm;
+        left: 1cm;
+        right: 1cm;
+        padding: 3cm;
+     }
+
+     #section h1{
+        text-align: center;
+        font-size: 3rem;
+     }
+
+     #section a{
+        color: rgb(97, 2, 249);
+            text-decoration: none;
+            position: relative;
+            text-align: center;
+           top: 1cm;
+     }
+     #leftbox {
+            float: left;
+            background:   rgb(175, 170, 237);
+            position: relative;
+            margin-left: 1cm;
+            margin-right: 4.2cm;
+            width: 20%;
+            height: 280px;
+            top: 2cm;
+            text-align: center;
+            padding: 0.5cm;
+            border-radius: 1cm;
+        }
+
+        #middlebox {
+            float: left;
+            position: relative;
+            background: rgb(175, 170, 237);
+            margin-right: 1cm;
+            width: 20%;
+            height: 280px;
+            top: 2cm;
+            text-align: center;
+            padding: 0.5cm;
+            border-radius: 1cm;
+            align-items: center;
+        }
+
+        #rightbox {
+            float: right;
+            position: relative;
+            background:   rgb(175, 170, 237);
+            width: 20%;
+            margin-left: 0%;
+            margin-right: 1cm;
+            height: 280px;
+            top: 2cm;
+            text-align: center;
+            padding: 0.5cm;
+            border-radius: 1cm;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        #boxes{
+            position: relative;
+            top: 9cm;
+            align-items: center;
+           
+
+
+        }
+        ul{
+            top: 0.2cm;
+            position: relative;
+            text-align: left;
+        }
+
+        #safety{
+            position: relative;
+        top: 14cm;
+        left: 1cm;
+        right: 1cm;
+        padding: 3cm;
+     }
+
+     #safety h1{
+        text-align: center;
+        font-size: 3rem;
+     }
+
+     #safety a{
+        color: rgb(97, 2, 249);
+            text-decoration: none;
+            position: relative;
+            text-align: center;
+           top: 1cm;
+     }
+     #search{
+        height: 1cm;
+        width: 7cm;
+        position: relative;
+        text-align: center;
+        border-radius: 3cm;
+
+     }
+
+     #search:hover{
+        width: 50%;
+     }
+      #submit{
+        position: relative;
+        height: 1cm;
+        width: 1cm;
+        color: rgb(0, 157, 248);
+      }
+      #links {
+            float: left;
+            margin-left: 1cm;
+            margin-right: 2cm;
+            width: 20%;
+            height: 280px;
+            top: 2cm;
+            text-align: center;
+            padding: 0.5cm;
+            border-radius: 1cm;
+        }
+
+        #middle {
+            float: left;
+        
+           
+            margin-right: 1cm;
+            width: 20%;
+            height: 280px;
+            top: 2cm;
+            text-align: center;
+            padding: 0.5cm;
+            border-radius: 1cm;
+            align-items: center;
+        }
+
+        #hospitals {
+            float: right;
+            width: 20%;
+            margin-left: 0%;
+            margin-right: 1cm;
+            height: 280px;
+            top: 2cm;
+            text-align: center;
+            padding: 0.5cm;
+            border-radius: 1cm;
+        }
+
+        #hospitals button{
+            background-color: yellow;
+            border-radius: 2cm;
+            height: 1cm;
+            width: 3cm;
+        }
+
+        #faq{
+            position: relative;
+            top: 0.5cm;
+
+        }
+        #faq input{
+            height: 1cm;
+            margin-top: 0.5cm;
+            border-radius: 2cm;
+        }
+
+        #faq button{
+            background-color: yellow;
+            height: 1cm;
+            width: 3cm;
+            border-radius: 2cm;
+            margin-top: 0.5cm;
+        }
+
+        #footer{
+            background-color: rgb(94, 34, 236);
+            top: 15cm;
+            height: 15cm;
+            width: 100%;
+            position: relative;
+            display: flex;
+            border-radius: 1cm;
+            
+        }
+
+        #footer a{
+            color: white;
+            font-size: small;
+            display: block;
+            margin-top: 1cm;
+            text-decoration: none;
+
+        }
+
+        #footer h1{
+            font-size: 2rem;
+            color: white;
+        }
+
+        #chatbot{
+          height: 1cm;
+          width: 3cm;
+          font-size: xx-large;
+          border-radius: 0.3cm;
+          background-color: rgb(231, 142, 26);
+          top: 15cm;
+          right: 0.5cm;
+          position: fixed;
+
+
+           
+        }
+    </style>
+
+
+<div class="nav">
+
+    <h1> FIND </h1>
+
+  <div id="navbar">
+<a href="#">HOME</a>
+<a href="#">HOSPITALS</a>
+<a href="#">GUIDE </a>
+
+<button id="sign">REGISTER</button>
+</div>
+</div>
+<input id="search" type="text" placeholder="TYPE AGE or HEIGHT">
+<buton id="submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i></buton>
+<div id="main">
+    <h1>FIND- Reuniting Your Loved Ones, One Click At A time </h1>
+    <p>A platform to report missing persons and help hospitals verify their whereabouts</p>
+    <button id="report">REPORT</button> <button id="discover">Discover</button>
+</div>
+
+<button id="chatbot"><i class='fa fa-comment'></i></button>
+
+<div id="section">
+
+    <h1>ABOUT FIND</h1>
+    <p>Losing a loved one can be an overwhelming experience, filled with uncertainty and fear. Find is created with a simple yet powerful purpose—to provide hope and a reliable way for families to reconnect with missing persons. By bringing together those searching and those who can help, we aim to make the process easier, faster, and more effective. Our platform is built on compassion, innovation, and the belief that no one should have to face this journey alone.</p>
+     <a href="#">LEARN MORE</a>
+</div>
+ 
+<div id="boxes">
+    <h1>GUIDE</h1>
+
+    <div id="leftbox">
+        <h2>REPORT A MISSING PERSON </h2>
+        <ul>
+            
+                Step 1: Click on the "Report Missing" button on the homepage.
+<br>
+                Step 2: Fill in the details such as the missing person’s name, age, last known location, and contact information.
+<br>
+                Step 3: Upload a photo of the missing person to help others identify them.
+<br>
+                Step 4: Submit the report. Your information will be saved and displayed to help others search for the missing person.
+
+            </li>
+        </ul>
+        
+    </div>
+
+    <div id="middlebox">
+        <h2>SEARCH FOR A MISSING PERSON</h2>
+        <ul>
+            Step 1: Go to the "Search" page. <br>
+Step 2: Browse through the listed missing person reports or use the search bar to filter by name, location, or age.
+<br>
+Step 3: Click on the profile to view more information, including contact details and last seen locations.
+<br>
+Step 4: If you recognize someone or have information, contact the number provided or submit updates through the website.
+        </ul>
+    
+    </div>
+
+    <div id="rightbox">
+        <h2>FOR HOSPITALS AND AUTHORITIES</h2>
+        <ul>
+            Step 1: Log in through the "Hospital Login" section.
+<br>
+Step 2: Check through the reports of missing persons.
+<br>
+Step 3: Update records if a person is admitted, providing necessary details such as condition and location.
+<br>
+Step 4: Help facilitate the reunion by sharing information with the reporting family members.
+
+        </ul>
+        
+    </div>
+</div>
+
+<div id="safety">
+    <h1>SECURITY</h1>
+    <p>At Find, we take the privacy and security of your data very seriously. We use SSL (Secure Socket Layer) encryption to protect all data transmitted on our platform, ensuring that your personal information, including contact details and photos, remains safe and encrypted. For added security, hospitals and authorities can access the platform through secure login methods, including Two-Factor Authentication (2FA) and role-based access control to ensure that only authorized personnel can access sensitive information.</p> <a href="#">Learn More </a>
+</div>
+
+<div id="footer"> 
+    <div id="links">
+      <h1>  Quick Links</h1>
+        <ul> 
+           
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">HOW IT WORKS</a>
+                <a href="#">SEARCH PERSONS</a>
+                <a href="#">CONTACT US</a>
+                <a href="#"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+                <a href="#"><i class="fa fa-envelope" style="font-size:36px"></i></a>
+                <a href="#"><i class="fa fa-phone" style="font-size:36px"></i></a>
+
+            
+        </ul>
+        </div>
+
+            <div id="middle">
+               <h1> Privacy & Security</h1>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Security and Measures</a>
+                </div>
+
+                <div id="hospitals">
+                   <h1> Hospitals and Authorities</h1>
+                    <br>
+                    <button id="hos">Register</button>
+                   
+                </div>
+                <div id="faq">
+                    <h1>FAQs
+                    <a href="#">FAQ</a>
+                    <input type="text" placeholder="ask your question">
+                    <button>SUBMIT</button>
+                </div>
+           
+       
+    </div>
+</div>
+<script>
+    document.getElementById("sign").addEventListener("click", function() {
+    window.location.href = "register.html";
+
+});
+document.getElementById("chatbot").addEventListener("click", function() {
+    window.location.href = "chatbot.html";
+
+});
+</script>
+    
+</body>
+
+</body>
+</html>

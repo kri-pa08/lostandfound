@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Report Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #chatbox {
+            width: 50%;
+            margin: auto;
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #output {
+            margin-top: 20px;
+            border: 1px solid #000;
+            padding: 10px;
+            display: none;
+        }
+        img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-top: 10px;
+        }
+
+        #upload{
+            background-color: grey;
+            height: 1cm;
+            width: 2cm;
+            top: 12cm;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Missing Report Chatbot</h2>
+    <div id="chatbox">
+        <p id="question"></p>
+        <input type="text" id="answer" placeholder="Type your answer here">
+        <input type="file" id="photo" style="display:none;">
+        <button onclick="nextQuestion()">Submit</button>
+    </div>
+    
+    <div id="output">
+        <h3>Missing Report</h3>
+        <p id="report"></p>
+        <img id="photoPreview" src="" alt="Missing Person Photo">
+       <div id="uploadb">
+        <button id="upload">Upload</button>
+        </div>
+    </div>
+
+
+
+
+    
+    <script>
+        const questions = [
+            "Enter the missing person's full name:",
+            "Enter the missing person's age:",
+            "Enter the last known location:",
+            "Enter the date they went missing:",
+            "Enter any identifying marks or characteristics:",
+            "Mobile Number",
+            "Any Message?"
+        ];
+
+        let responses = [];
+        let currentQuestion = 0;
+
+        document.getElementById("question").innerText = questions[currentQuestion];
+
+        function nextQuestion() {
+            let inputField = document.getElementById("answer");
+            let fileInput = document.getElementById("photo");
+            
+            if (currentQuestion < questions.length - 1) {
+                responses.push(inputField.value);
+                inputField.value = "";
+                currentQuestion++;
+                document.getElementById("question").innerText = questions[currentQuestion];
+            } else {
+                fileInput.style.display = "block";
+                inputField.style.display = "none";
+                document.getElementById("question").innerText = "Please upload a recent photo.";
+                
+                fileInput.addEventListener("change", function() {
+                    let file = fileInput.files[0];
+                    if (file) {
+                        let reader = new FileReader();
+                        reader.onload = function(e) {
+                            document.getElementById("photoPreview").src = e.target.result;
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                    displayReport();
+                });
+            }
+        }
+
+        function displayReport() {
+            let reportText = `Name: ${responses[0]}<br>Age: ${responses[1]}<br>Last Seen: ${responses[2]}<br>Missing Since: ${responses[3]}<br>Identifying Marks: ${responses[4]}`;
+            document.getElementById("report").innerHTML = reportText;
+            document.getElementById("output").style.display = "block";
+            document.getElementById("chatbox").style.display = "none";
+        }
+    </script>
+</body>
+</html>
